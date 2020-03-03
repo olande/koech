@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT THE INTERVAL OF YOUR GARBAGE COLLECTIONS"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="120dp"
+        ></TextView>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Every"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="78dp"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        ></TextView>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="130dp"/>
+
+    </RelativeLayout>

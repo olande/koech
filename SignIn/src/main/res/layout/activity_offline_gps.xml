@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.subzdesigns.gpsoffline.OfflineGPS">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/customToolbar"
+            android:orientation="horizontal"
+            android:background="#e74c3c">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/gpstitle"
+                android:background="#e74c3c"
+                android:text="Your Location "
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/yourLatitude"
+            android:layout_below="@+id/customToolbar"
+            android:layout_marginTop="10dp"
+            android:hint="Latitude"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:inputType="none"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/yourLongitude"
+            android:layout_below="@+id/yourLatitude"
+            android:layout_marginTop="10dp"
+            android:hint="Longitude"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:inputType="none"
+            />
+        <TextView
+
+            android:id="@+id/description"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yourLongitude"
+            android:text=" Dear member once the GPS has generated your location, submit by clicking the button bellow"
+            android:textColor="@color/colorAccent"
+            >
+        </TextView>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:text="Submit your location"
+            ></Button>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAs"
+    android:background="@color/best"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+          android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp"
+            app:cardCornerRadius="4dp"
+            android:tooltipText="hello world"
+            android:layout_margin="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:id="@+id/Landlord"
+                android:layout_height="130dp"
+                android:src="@drawable/landlord"
+                android:layout_marginRight="20dp"
+
+                android:layout_marginLeft="20dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LANLORD"
+                android:layout_marginTop="130dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                ></TextView>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp"
+            app:cardCornerRadius="4dp"
+            android:layout_margin="3dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Merchant"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:src="@drawable/app"
+                android:layout_below="@+id/textview">
+            </de.hdodenhof.circleimageview.CircleImageView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="MERCHANTS"
+    android:layout_marginTop="130dp"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:textColor="@color/colorAccent"
+    android:textSize="15dp"
+    ></TextView></com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+<Button
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:text="CONTINUE AS GUEST"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+
+    ></Button>
+
+
+
+</LinearLayout>
